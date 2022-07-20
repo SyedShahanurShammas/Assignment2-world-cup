@@ -2,12 +2,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 /* Style for Top Banner */
 .Top-banner {
     Width: 800px;
-    Height: 450px;
+    Height: 370px;
     padding: 40px;
     background-color: #161616;
     margin: 40px auto;
@@ -19,6 +20,7 @@ body {
 .about-banner {
     color: #FFFFFF;
     width: 100%;
+    margin-top: initial;
 
 }
 
@@ -29,17 +31,17 @@ body {
 }
 
 .player img {
-    height: 450px;
+    height: 370px;
 }
 
 .about-banner h2 {
-    font-weight: 700;
-    font-size: 50px;
+    font-weight: 600;
+    font-size: 45px;
 
 }
 
 .about-banner p {
-    margin-top: 0;
+    margin-top: -39px;
 }
 
 
@@ -49,6 +51,7 @@ body {
     padding: 10px 20px;
     margin-bottom: 35px;
     border-radius: 15px;
+    margin-bottom: 50px;
 }
 
 /* -------------------------
@@ -57,34 +60,59 @@ body {
 
 
 .middle-section {
-    height: 600px;
+    height: 900px;
     border: 2px solid red;
     width: 870px;
     margin: 75px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.type-nav {
-    width: 252px;
-    height: 252px;
+
+
+.for-nav {
+    width: 190px;
+    height: 200px;
     background-color: #161616;
     border-radius: 10px;
     margin-top: 10px;
+    margin-left: -5px;
 
 }
 
-.type-nav a button {
+.type-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    text-decoration: none;
+.btn-1 {
     background-color: #FFFFFF;
-    padding: 15px 30px;
-    margin: 10px 30px;
+    padding: 8px 15px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.btn-2 {
+    background-color: #FFFFFF;
+    padding: 8px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-3 {
+    background-color: red;
+    padding: 8px 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
 
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-right: -15px;
 }
 
 .blog {
@@ -134,4 +162,19 @@ span {
     bottom: 12.5%;
 
     border: 1.5px solid rgba(22, 22, 22, 0.8);
+}
+
+/* -----------------
+    foore Section
+   ------------------ */
+.Footer-section {
+    background-color: #161616;
+    height: 260px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.Footer-section h2 {
+    color: #FFFFFF;
 }

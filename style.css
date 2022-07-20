@@ -32,6 +32,7 @@ body {
 
 .player img {
     height: 370px;
+    width: 350px;
 }
 
 .about-banner h2 {
@@ -288,8 +289,10 @@ hr {
 @media only screen and (max-width:375px) {
     .Top-banner {
         flex-direction: column;
-        height: 820px;
-        width: 620px;
+        align-items: flex-start;
+        height: 810px;
+        width: 615px;
+        margin-top: 15px;
     }
 
     .player {
@@ -299,5 +302,16 @@ hr {
 
     .about-banner {
         width: 50%;
+
     }
+
+    .middle-section,
+    .footer-section,
+    .for-middle {
+        display: none;
+    }
+
+
+
+
 }
